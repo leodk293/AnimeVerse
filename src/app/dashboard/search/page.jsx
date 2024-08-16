@@ -2,9 +2,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import { nanoid } from 'nanoid';
+import Image from 'next/image';
 
 
-export default function page() {
+export default function Page() {
     const [animeData, setAnimeData] = useState({
         error: true,
         data: undefined
@@ -48,7 +49,7 @@ export default function page() {
                     animeData.data.map((anime) => (
                         <Link className='border border-transparent p-1 rounded-[5px] bg-blue-950 hover:translate-y-[-5px] duration-300 hover:bg-red-950 duration-300'
                             href={`/details/${anime.mal_id}`} key={nanoid(10)}>
-                            <img className='object-cover rounded-[5px] h-[15rem] w-[10rem]' src={anime.images.jpg.image_url} alt={anime.title} />
+                            <Image className='object-cover rounded-[5px] h-[15rem] w-[10rem]' src={anime.images.jpg.image_url} alt={anime.title} />
                         </Link>
                     ))
                 ) : (

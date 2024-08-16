@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { nanoid } from 'nanoid';
 import './styles.css'
 
@@ -44,7 +45,7 @@ export default function Popular() {
                             href={`/details/${anime.mal_id}`}
                             key={nanoid(10)}
                         >
-                            <img className='object-cover rounded-[5px] h-[15rem] w-[10rem]' src={anime.images.jpg.image_url} alt={anime.title} />
+                            <Image className='object-cover rounded-[5px] h-[15rem] w-[10rem]' src={anime.images.jpg.image_url} alt={anime.title} />
                         </Link>
                     ))
                 ) : (

@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <p className="w-auto mx-2 text-center leading-[1.5] text-[20px] md:w-[45rem] mx-0 text-zinc-300">
           Dive into the exciting world of AnimeVerse, your ultimate destination for all things anime. Whether
-          you're a seasoned otaku or new to the anime scene, AnimeVerse has something special for you.
+          you&apos;re a seasoned otaku or new to the anime scene, AnimeVerse has something special for you.
         </p>
         <p className='text-center text-3xl text-orange-700 font-bold'>Ready ?</p>
 

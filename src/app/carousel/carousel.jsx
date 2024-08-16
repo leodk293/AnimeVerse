@@ -8,7 +8,7 @@ const ImageScroller = ({ images }) => {
       <div className="flex w-full animate-scroll">
         {images.map((src, index) => (
           <div key={index} className="w-1/4 flex-shrink-0">
-            <img
+            <Image
               src={src}
               alt={`Image ${index}`}
               layout="responsive"
@@ -18,7 +18,7 @@ const ImageScroller = ({ images }) => {
         ))}
         {images.map((src, index) => (
           <div key={`copy-${index}`} className="w-1/4 flex-shrink-0">
-            <img
+            <Image
               src={src}
               alt={`Image ${index}`}
               layout="responsive"
