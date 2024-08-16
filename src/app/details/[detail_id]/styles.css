@@ -1,0 +1,31 @@
+.text-gradient {
+    background: linear-gradient(90deg, #ff0000, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main {
+    background: linear-gradient(to right, #ffd700, #ffac00, #ffc700, #ff8c00);
+}
+
+.support {
+    background: linear-gradient(to right, #8b4513, #a0522d, #cd853f, #deb887, #f5deb3);
+}
+
+.title {
+    outline: none;
+    background: linear-gradient(to right, #ffff00, #ffcc00, #ff9900, #ff6600, #ff3300, #ff0000);
+}
+
+.golden-border { 
+    border-image: linear-gradient(to right, #ffd700, #ffac00, #ffc700, #ff8c00) 1;
+    background: linear-gradient(to right, #ffd700, #ffac00, #ffc700, #ff8c00);
+}
+
+.text-violet{
+    background: linear-gradient(90deg, purple, #fff, violet);
+    text-decoration: underline;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
